@@ -1,0 +1,94 @@
+ <head>
+ <style>
+ form {
+  /* On centre le formulaire */
+  margin: 200 auto;
+  width: 400px;
+  background-color:yellow;
+  /* Le contour du formulaire */
+  padding: 5em;
+  border: 20px solid#afa;
+  border-radius: 20em;
+  ul {
+  listyle: ;
+  paddi-st ng: 20;
+  margin: 3em;
+}
+form li  {
+  margin-top: 2em;
+}
+label {
+  /* Taille et alignement uniformes */
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  border:2px solid purple;
+  border-radius:5em;
+  background-color:lightblue;
+}
+input,textarea {
+  /* On s'assure que les champs texte ont la même police
+     Par défaut, les zones de texte ont une police à chasse
+     fixe. */
+  font: 1em sans-serif;
+  /* Taille uniforme pour des champs */
+  width: 200px;
+  box-sizing: border-box;
+  /* On utilise la même bordure que pour le formulaire */
+  border: 5px solid orange;
+  border-radius:5em;
+}
+input:focus,textarea:focus {
+  /* On rajoute une mise en avant pour les éléments avecle focus. */
+  border-color: red;
+}
+textarea {
+  /* On aligne les textes sur plusieurs lignes avec leurlibellé. */
+  vertical-align: top;
+
+  /* On fournit un peut d'espace pour saisir du texte. */
+  height: 5em;
+
+  /* On permet de redimensionner verticalement. */
+  resize: vertical;
+}
+button {
+  /* On aligne les boutons avec les champs texte. */
+  padding-left: 90px; /* La même taille que les libellés */
+}
+
+button {
+  /* Une marge supplémentaire représentant approximativement
+     le même espace qu'entre les libellés et les champs. */
+  margin-left: 0.5em;
+
+
+
+
+
+
+
+
+ </style>
+ </head>
+<body>
+<form action="/ma-page-de-traitement" method="post">
+ <ul>
+ <li>
+      <label for="name">Nom&nbsp;:</label>
+      <input type="text" id="name" name="user_name" />
+    </li>
+    <li>
+      <label for="mail">E-mail&nbsp;:</label>
+      <input type="email" id="mail" name="user_mail" />
+    </li>
+    <li>
+      <label for="msg">Message&nbsp;:</label>
+      <textarea id="msg" name="user_message"></textarea>
+    </li>
+  </ul>
+  <div class="bouton">
+  <button type="submit">envoyer</button>
+  </div>
+</form>
+</body>
